@@ -1,0 +1,80 @@
+# ------------------------------------
+# 1. Jupyter Notebook Artifacts
+# ------------------------------------
+
+# Exclude checkpoint directories created by Jupyter/IPython (CRITICAL)
+# These are hidden directories created upon saving.
+.ipynb_checkpoints/
+
+# Exclude files created when notebooks are opened in the editor
+# These are temporary lock files.
+*.ipynb-session
+
+# ------------------------------------
+# 2. Python Environment & Build Files
+# ------------------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution and packaging files
+.Python
+build/
+dist/
+*.egg-info/
+
+# Virtual Environments (CRITICAL)
+# Exclude entire venv directories, often named venv or .venv
+venv/
+.venv/
+env/
+.env/
+
+# Python installer/pip files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ------------------------------------
+# 3. macOS Artifacts (For your Mac Mini)
+# ------------------------------------
+
+# macOS hidden resource files
+.DS_Store
+# Finder-related directories
+.fseventsd/
+.Spotlight-V100
+.Trashes
+Icon?
+
+# ------------------------------------
+# 4. Data and Log Files (Typically large or sensitive)
+# ------------------------------------
+
+# General Logs and Database files
+*.log
+*.sqlite
+*.db
+
+# Data files (often too large for Git)
+# Only include this if you explicitly DO NOT want data tracked.
+# If you use git-lfs for data, you may remove this.
+data/
+datasets/
+/raw_data/
+*.csv
+*.tsv
+*.xlsx
+*.pkl
+*.jsonl
+
+# ------------------------------------
+# 5. Editor and IDE Files (VS Code, etc.)
+# ------------------------------------
+
+# VS Code directory (stores workspace settings/state)
+.vscode/
+
+# Jupyter Lab/VS Code workspace files
+.jupyter/
